@@ -1,0 +1,9 @@
+*.iml
+*.xml
+*.class
+*.jar
+*.json
+
+out/
+/bin/
+/.mpm/
