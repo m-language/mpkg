@@ -2,8 +2,12 @@
   "name": "mpkg",
   "version": "1.0.0",
   "description": "A temporary dependency management solution for [m-language](https://github.com/m-language/m-language), allowing package installation, dependency resolution, package publishing, and package specification.",
-  "main": "mpkg.js",
-  "scripts": {},
+  "main": "build/js/mpkg.js",
+  "types": "build/js/mpkg.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "run": "node build/js/mpkg.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tkaden4/mpkg.git"
@@ -14,12 +18,25 @@
     "url": "https://github.com/tkaden4/mpkg/issues"
   },
   "bin": {
-    "mpkg": "./mpkg.js"
+    "mpkg": "./src/cli.js"
   },
   "homepage": "https://github.com/tkaden4/mpkg#readme",
   "dependencies": {
+    "@types/meow": "^5.0.0",
     "chalk": "^2.4.2",
+    "decompress": "^4.2.0",
+    "decompress-targz": "^4.1.1",
     "execa": "^1.0.0",
-    "meow": "^5.0.0"
+    "meow": "^5.0.0",
+    "request": "^2.88.0",
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "@types/decompress": "^4.2.3",
+    "@types/execa": "^0.9.0",
+    "@types/node": "^12.0.8",
+    "@types/request": "^2.48.1",
+    "@types/shelljs": "^0.8.5",
+    "typescript": "^3.5.2"
   }
 }
