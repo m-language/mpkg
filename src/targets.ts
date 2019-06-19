@@ -104,6 +104,7 @@ export class GitRepoTarget extends BuildTarget {
     }
 }
 
+/*
 export const githubRepoDownloadTarget = (repoUrl: string, branch: string, into: string) => BuildTarget.create(
     "github",
     [],
@@ -124,6 +125,7 @@ export const githubRepoDownloadTarget = (repoUrl: string, branch: string, into: 
         }
     }
 );
+*/
 
 export const installMTarget = (config: MpkgConfiguration, backend: string) => BuildTarget.create(
     "install-compiler",

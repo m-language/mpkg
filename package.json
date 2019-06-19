@@ -18,13 +18,11 @@
     "url": "https://github.com/tkaden4/mpkg/issues"
   },
   "bin": {
-    "mpkg": "./src/cli.js"
+    "mpkg": "./build/js/mpkg.js"
   },
   "homepage": "https://github.com/tkaden4/mpkg#readme",
   "dependencies": {
-    "@types/meow": "^5.0.0",
     "chalk": "^2.4.2",
-    "decompress": "^4.2.0",
     "decompress-targz": "^4.1.1",
     "execa": "^1.0.0",
     "meow": "^5.0.0",
@@ -32,6 +30,7 @@
     "shelljs": "^0.8.3"
   },
   "devDependencies": {
+    "@types/meow": "^5.0.0",
     "@types/decompress": "^4.2.3",
     "@types/execa": "^0.9.0",
     "@types/node": "^12.0.8",
