@@ -16,7 +16,7 @@ Usage: ${process.argv[1]} SUBCOMMMAND ARGUMENTS [OPTIONS]
 SUBCOMMAND
     init                Download + Install compiler and standard library
     build               Build the project with the m compiler
-    install PACKAGE     Install m package PACKAGE
+    install <package>   Install a package
 `;
 
 const cli = meow(usage, {
