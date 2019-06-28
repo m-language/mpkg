@@ -21,6 +21,7 @@ will be made, requiring some work on your part to get your package or applicatio
 * Kotlin CLI compiler, version `1.3.30` or later
 * Gradle, version `4.0` or later is preferred
 
-## Usage
-
-TODO
+## TODO
+- Fix bug where a lasting gradle processes are running after building m-jvm
+- Dont use `kotlin` script: invokes gradle in an unsafe way
+- Write usage

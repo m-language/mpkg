@@ -19,7 +19,6 @@ import path from 'path';
 import chalk from "chalk";
 import execa from "execa";
 import request = require("request");
-import { Stream } from "stream";
 
 export type Logger = (...info: any[]) => void;
 export type TargetAction = (logger: Logger) => void;
@@ -103,29 +102,6 @@ export class GitRepoTarget extends BuildTarget {
         }    
     }
 }
-
-/*
-export const githubRepoDownloadTarget = (repoUrl: string, branch: string, into: string) => BuildTarget.create(
-    "github",
-    [],
-    () => false,
-    logger => {
-        logger(`downloading ${repoName(repoUrl)}`);
-        let tarballStream = request(path.join(repoUrl, branch, "tarball"));
-        let decompress = decompressTargz(tarballStream);
-        if(decompress instanceof Stream) {
-            let fileStream = decompress.pipe(fs.createWriteStream(into));
-            let resultPromise = new Promise((resolve, reject) => {
-                fileStream.on("end", () => resolve(fileStream));
-                fileStream.on("error", reject);
-            });
-            return resultPromise;
-        } else {
-            return Promise.reject("The input was incorrect");
-        }
-    }
-);
-*/
 
 export const installMTarget = (config: MpkgConfiguration, backend: string) => BuildTarget.create(
     "install-compiler",
