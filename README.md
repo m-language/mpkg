@@ -45,4 +45,3 @@ Backend to use when compiling, defaults to `jvm`, which is the only supported ba
 ## TODO
 - Fix bug where a lasting gradle processes are running after building m-jvm
 - Dont use `kotlin` script: invokes gradle in an unsafe way
-- Write usage
