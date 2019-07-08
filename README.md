@@ -28,6 +28,7 @@ will be made, requiring some work on your part to get your package or applicatio
 git clone https://github.com/m-language/mpkg
 cd mpkg
 npm install
+npm run build
 npm link
 ```
 
