@@ -64,7 +64,7 @@ Output directory for compiled code.
 mpkg can be configured with a `mpkg.json` file at the top level of your project,
 supporting the following options (currently):
 
-```JSON
+```JS
 {
     // Commit SHA for specific version of the M compiler    
     "compilerVersion": "...",
