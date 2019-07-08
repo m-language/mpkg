@@ -22,6 +22,15 @@ will be made, requiring some work on your part to get your package or applicatio
 * Gradle, version `4.4` or later is preferred
 * Node.js, version 10 or later
 
+## Installation
+
+```bash
+git clone https://github.com/m-language/mpkg
+cd mpkg
+npm install
+npm link
+```
+
 ## Usage
 
 mpkg should be used to build projects, but will not perform any installation of packages
